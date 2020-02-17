@@ -4,7 +4,7 @@ int generateMultiplicationTable(int finalNumber); /* prototipo de funcion */
 
 int main() {
     int x;
-    printf("Introduzca el valor final de la tabla de multiplicar: \n");
+    printf("Introduzca el valor final de la tabla de multiplicar: ");
     scanf("%d", &x);
     generateMultiplicationTable(x); /* llamada a la funcion */
     return 0;
@@ -18,6 +18,7 @@ int generateMultiplicationTable(int finalNumber) /* definicion de la funcion */ 
         for (y = 1; y <= 10; y++){
             printf("%d x %d = %d, ", y, x, x*y);
         }
+        printf("\n");
     }
     return 0;
 }
